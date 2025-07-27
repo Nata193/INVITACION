@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nata & Miguel - Invitación de Boda</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+</head>
+<body>
+  <!-- 🔹 Pantalla de bienvenida -->
+  <div id="cover" class="cover-screen">
+    <div class="cover-content">
+      <h1>Estás invitado</h1>
+      <p>Abre la invitación de Nata & Miguel</p>
+      <button id="openBtn">ABRIR INVITACIÓN</button>
+    </div>
+  </div>
+
+  <!-- 🔹 Contenido principal (oculto al inicio) -->
+  <div id="main-content" style="display: none;">
+    <div class="music-btn" onclick="toggleMusic()">🎵</div>
+
+    <div class="hero">
+      <div class="hero-content">
+        <p>15.05.2026</p>
+        <h1>Nata & Miguel</h1>
+        <p>"Todos somos mortales, hasta el primer beso y la segunda copa de vino"</p>
+      </div>
+    </div>
+
+    <div class="countdown">
+      <h2>Falta</h2>
+      <span>40 días</span>
+      <span>1 hs</span>
+      <span>25 min</span>
+      <span>20 seg</span>
+    </div>
+
+    <div class="section">
+      <h2>Ceremonia</h2>
+      <p>Sábado 15 de Mayo - 17hs</p>
+      <p>Parroquia Nuestra Señora de Luján</p>
+    </div>
+
+    <div class="section">
+      <h2>Fiesta</h2>
+      <p>Sábado 15 de Mayo - 20hs</p>
+      <p>Salón de fiestas Avril</p>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="carousel-container">
+      <div class="gallery" id="gallery">
+        <a href="#"><img src="img/imagen1.avif" alt="Foto 1"></a>
+        <a href="#"><img src="img/imagen2.jpg" alt="Foto 2"></a>
+        <a href="#"><img src="img/imagen3.webp" alt="Foto 3"></a>
+        <a href="#"><img src="img/imagen4.jpg" alt="Foto 4"></a>
+        <a href="#"><img src="img/imagen5.jpg" alt="Foto 5"></a>
+        <a href="#"><img src="img/imagen6.webp" alt="Foto 6"></a>
+      </div>
+      <div class="dots" id="dots"></div>
+    </div>
+
+    <div class="section">
+      <h2>Fiesta</h2>
+      <div class="cards">
+        <div class="card"><h3>Música</h3><p>¿Cuál es la canción que no debe faltar?</p></div>
+        <div class="card"><h3>Dress Code</h3><p>Una orientación para tu vestuario</p></div>
+        <div class="card"><h3>Tips y Notas</h3><p>Información adicional para tener en cuenta</p></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Regalos</h2>
+      <p>Si deseas regalarnos algo más que tu hermosa presencia...</p>
+      <button>CUENTA BANCARIA - LISTA REGALOS</button>
+    </div>
+
+    <div class="section">
+      <h2>Compartimos este día junto a vos</h2>
+      <p>Compartí tus fotos y videos de ese hermoso día</p>
+      <h3>#nata&miguel</h3>
+      <button>VER EN INSTAGRAM</button>
+    </div>
+
+    <div class="footer">
+      <p>Gracias por acompañarnos</p>
+    </div>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="Ed Sheeran - Perfect.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
